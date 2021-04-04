@@ -1,5 +1,8 @@
 # Simon-Game
 ### I have made this Simon-Game as a project to improve my JavaScript Skills and also to have some Fun. <br>
+
+#### Head over  <a href="https://being-vishal.github.io/Simon-Game/"> here </a> to play.
+
 #### Not aware of the rules for Simon Game? Don't worry I have got you covered. Here's the Gameplay:-
 <ul>
 <li>The screen will display four colored buttons, each producing a particular tone when 
