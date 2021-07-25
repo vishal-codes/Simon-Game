@@ -1,3 +1,5 @@
+// jshint esversion: 6
+const startBtn = document.getElementById("testbutton1");
 
 var gamePattern = [];
 
@@ -5,14 +7,15 @@ var userClickedPattern = [];
 
 var buttonColours = ["red" , "blue" , "green" , "yellow"];
 
-var level = 0;
+var level = -1;
 var started = true;
 
-$(document).keypress(function() {
+$(".testbutton").click(function() {
   if (started) {
-    $("#level-title").text("Level " + level);
+    $("#level-title").text("Your Score is  " + level);
     nextSequence();
     started = false;
+    startBtn.style.display = "none";
   }
 });
 
@@ -38,8 +41,9 @@ function checkAnswer(currentLevel){
       } else {
         playSound("wrong");
         $("body").addClass("game-over");
-        $("#level-title").text("Game Over, Press Any Key to Restart");
-
+        $("#level-title").text("Game Over!! Final Score "+level);
+        startBtn.style.display = "inline";
+        $("#testbutton1").text("Restart");
         setTimeout(function () {
           $("body").removeClass("game-over");
         }, 200);
@@ -52,7 +56,7 @@ function checkAnswer(currentLevel){
 function nextSequence(){
    userClickedPattern = [];
    level++;
-   $("#level-title").text("Level " + level);
+   $("#level-title").text("Score " + level);
    var randomNumber = Math.random();
    randomNumber = randomNumber * 4;
    randomNumber  = Math.floor(randomNumber);
@@ -77,9 +81,8 @@ function playSound(name){
    audio.play();
 }
 
-
 function startOver() {
-  level = 0;
+  level = -1;
   gamePattern = [];
   started = true;
 }
