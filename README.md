@@ -10,8 +10,5 @@ it is pressed or activated by the device for assigning the pattern.
 <li>A round in the game consists of the device lighting a cloured button in a random order, after which the player must reproduce that order by pressing the buttons.
 <li>As the game progresses, the number of buttons to be pressed increases as the player has to start the order from the beginning. 
 If the player isn't able to follow the pattern then game over.
-
-
-
-
 </ul>
+<a href="https://drive.google.com/file/d/1tKnue-RmN2u9dxku00prCf0otwAUS5Ua/view?usp=sharing"> <b>DEMO</b></a>
