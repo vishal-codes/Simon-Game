@@ -1,7 +1,7 @@
 # Simon-Game
 ### I have made this Simon-Game as a project to improve my JavaScript Skills and also to have some Fun. <br>
 
-#### Head over  <a href="https://being-vishal.github.io/Simon-Game/"> here </a> to play.
+#### Head over  <a href="https://vishal-codes.github.io/Simon-Game/"> here </a> to play.
 
 #### Not aware of the rules for Simon Game? Don't worry I have got you covered. Here's the Gameplay:-
 <ul>
